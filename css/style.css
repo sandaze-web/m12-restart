@@ -962,7 +962,7 @@ body {
   align-items: stretch;
   padding-top: 50px;
 }
-.repair-box:last-child {
+.repair-box:last-child, .repair-box:nth-child(2) {
   margin-left: 20px;
 }
 .repair-box__text {
@@ -1199,6 +1199,16 @@ body {
   .m12-stages .slick-track {
     margin-left: 20px;
     position: relative;
+  }
+}
+@media (max-width: 414px) {
+  .m12-stages__steps {
+    width: 119% !important;
+  }
+}
+@media (max-width: 375px) {
+  .m12-stages__steps {
+    width: 123% !important;
   }
 }
 
