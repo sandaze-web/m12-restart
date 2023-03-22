@@ -246,24 +246,10 @@ document.addEventListener('DOMContentLoaded', function () {
     if(window.innerWidth <= 480) {
       $('.m12-stages-box').slick({
         infinite: false,
-        slidesToShow: 2.3,
+        slidesToShow: 1.5,
         slidesToScroll: 1,
         dots: false,
         arrows: false,
-        responsive: [
-          {
-            breakpoint: 390,
-            settings: {
-              slidesToShow: 1.85,
-            }
-          },
-          {
-            breakpoint: 350,
-            settings: {
-              slidesToShow: 1.65,
-            }
-          },
-        ]
       });
     }
   }
