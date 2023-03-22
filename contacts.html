@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="./static/css/color.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="./static/css/all.css">
+
+  <!-- ========== FAVICONS ========== -->
+  <link rel="apple-touch-icon" sizes="76x76" href="./static/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./static/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./static/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./static/favicon/safari-pinned-tab.svg" color="#5bbad5">
+
+  <title>Главная</title>
+</head>
+  <body>
+    <div class="_overlay-bg modal modal-form" data-popup="form">
+  <div class="modal-formBx">
+    <p class="modal-form__title">Нужен ремонт или консультация?</p>
+    <!-- /.modal-form__title -->
+    <p class="modal-form__subtitle">Заполните форму ниже и наш менеджер свяжется с вами в течение 15 минут!</p>
+    <!-- /.modal-form__subtitle -->
+    <form action="#">
+      <div class="modal-form-inputBx"><input type="text" required placeholder="Ваше имя"></div>
+      <div class="modal-form-inputBx"><input type="text" class="mask-phone" required placeholder="+7(___)___-__-__"></div>
+      <div class="modal-form-inputBx">
+        <select name="type-technics" id="">
+          <option value="" selected="selected">Тип устройства</option>
+          <option value="">Ноутбук</option>
+          <option value="">Планшет</option>
+          <option value="">Моноблок</option>
+        </select>
+      </div>
+      <button class="pb modal-form__button">Отправить</button>
+      <p class="modal-form__notice">Нажимая на кнопку «Отправить», вы соглашаетесь с <a href="#">Политикой обработки персональных
+        данных</a></p>
+      <!-- /.modal-form__notice -->
+    </form>
+    <svg class="button-close modal-form-cross" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 1L13 13" stroke="#C3C3C3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M13 1L1 13" stroke="#C3C3C3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+  <!-- /.formBx -->
+</div>
+
+<div class="_overlay-bg modal success">
+  <div class="success-box">
+    <div class="success-svgBx">
+      <svg width="48" height="35" viewBox="0 0 48 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M44.9999 3L16.1249 32L2.99994 18.8182" fill="#26C349"/>
+        <path d="M44.9999 3L16.1249 32L2.99994 18.8182" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <!-- /.success-svgBx -->
+    <p class="modal-form__title success__title">Заявка отправлена</p>
+    <p class="modal-form__subtitle success__subtitle">Наш менеджер свяжется с вами в ближайшее время!</p>
+
+    <svg class="button-close modal-form-cross success-cross" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 1L13 13" stroke="#C3C3C3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M13 1L1 13" stroke="#C3C3C3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+</div>
+
+<div class="_overlay-bg modal success">
+  <div class="success-box">
+    <div class="success-svgBx red">
+      <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.95625 38.6863L38.6425 2.00004" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M39.0437 38.6863L2.35751 2.00004" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <!-- /.success-svgBx -->
+    <p class="modal-form__title success__title">Ошибка</p>
+    <p class="modal-form__subtitle success__subtitle">Неверно введены данные, попробуйте снова</p>
+
+    <svg class="button-close modal-form-cross success-cross" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 1L13 13" stroke="#C3C3C3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M13 1L1 13" stroke="#C3C3C3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+</div>
+
+<header class="m12-header">
+  <div class="m12-header__container">
+    <div class="m12-header-inner">
+      <nav class="_overlay-bg m12-header-nav">
+        <div class="m12-header-navBx">
+          <ul>
+            <li class="m12-header-nav__item"><a href="" class="m12-header-nav__link">О нас</a></li>
+            <li class="m12-header-nav__item"><a href="" class="m12-header-nav__link">Ремонт</a></li>
+            <li class="m12-header-nav__item"><a href="" class="m12-header-nav__link">Диагностика</a></li>
+            <li class="m12-header-nav__item"><a href="" class="m12-header-nav__link">Цены</a></li>
+            <li class="m12-header-nav__item"><a href="" class="m12-header-nav__link">Контакты</a></li>
+          </ul>
+          <button class="mobile m12-why__button pb" data-type="form">Заказать ремонт</button>
+          <div class="mobile m12-header-phoneBx">
+            <a href="tel: +7 (939) 555-41-27" class="m12-header__phone">+7 (939) 555-41-27</a>
+            <!-- /.m12-header__phone -->
+            <p class="m12-header__text">Ежедневно с 09:00 до 21:00</p>
+            <!-- /.m12-header__text -->
+          </div>
+          <!-- /.m12-header-phoneBx -->
+          <p class="mobile m12-header__address">Москва, улица Дыбенко, 7/1</p>
+        </div>
+      </nav>
+      <p class="mobile m12-header__address">Москва, улица Дыбенко, 7/1</p>
+      <!-- /.m12-header__address -->
+      <a href="./" class="m12-header-logoBx">
+        <img src="./images/logo.svg" alt="" class="m12-header__logo">
+      </a>
+      <!-- /.m12-header-logoBx -->
+      <p class="m12-header__address desktop">Москва, улица Дыбенко, 7/1</p>
+      <!-- /.m12-header__address -->
+      <div class="m12-header-phoneBx">
+        <a href="tel: +7 (939) 555-41-27" class="m12-header__phone">+7 (939) 555-41-27</a>
+        <!-- /.m12-header__phone -->
+        <p class="m12-header__text">Ежедневно с 09:00 до 21:00</p>
+        <!-- /.m12-header__text -->
+      </div>
+      <!-- /.m12-header-phoneBx -->
+      <div class="header-burger">
+        <span></span>
+      </div>
+      <!-- /.header-burger -->
+    </div>
+    <!-- /.m12-header-inner -->
+  </div>
+</header>
+    <main class="main">
+      <section class="template">
+        <div class="template__container">
+          <div class="template-inner">
+            <div class="template-box">
+              <div class="template-crumbsBx">
+                <a href="" class="template-crumbsBx__link">Главная</a>
+                <div class="template-crumbsBx__arrow">
+                  <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.832 7.712L0.0880001 6.976L3.136 3.96L0.0880001 0.943999L0.832 0.207999L4.592 3.96L0.832 7.712Z" fill="white"/>
+                  </svg>
+                </div>
+                <a href="" class="template-crumbsBx__link">Контакты</a>
+              </div>
+              <!-- /.template-crumbsBx -->
+              <h1 class="template__title ws-nowrap">Контакты</h1>
+              <!-- /.template__title -->
+
+              <div class="template-contacts">
+                <div class="template-contactsBx">
+                  <div class="template-contacts-svgBx">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M3.16585 1.55374C4.68752 0.0407137 7.19299 0.310032 8.46713 2.01201L10.0434 4.11752C11.0801 5.50237 10.9886 7.43788 9.75799 8.66153L9.45952 8.95829C9.44649 8.99616 9.41487 9.11518 9.44996 9.34136C9.52899 9.85074 9.95434 10.9312 11.74 12.7068C13.525 14.4816 14.6132 14.9066 15.1298 14.9858C15.3639 15.0217 15.4863 14.9882 15.5242 14.975L16.0342 14.4679C17.1283 13.3801 18.8093 13.1768 20.1638 13.9131L22.552 15.2113C24.5969 16.323 25.1136 19.1026 23.4382 20.7685L21.6625 22.5341C21.103 23.0904 20.3506 23.5543 19.4324 23.6399C17.1712 23.8507 11.8984 23.5817 6.35824 18.073C1.18585 12.93 0.193271 8.44499 0.0676844 6.2352L1.00367 6.18201L0.0676843 6.2352C0.00418229 5.11781 0.532204 4.17244 1.20385 3.5046L3.16585 1.55374ZM6.96614 3.13569C6.33286 2.28976 5.15251 2.2225 4.4879 2.88333L2.5259 4.8342C2.1135 5.24426 1.91508 5.69617 1.93966 6.12882C2.03945 7.88456 2.84107 11.9317 7.68029 16.7434C12.7571 21.7914 17.4461 21.9419 19.2584 21.773C19.6287 21.7385 19.9969 21.5461 20.3404 21.2045L22.1161 19.4389C22.838 18.7212 22.6787 17.4144 21.6565 16.8586L19.2683 15.5604C18.6089 15.202 17.8363 15.3202 17.3563 15.7975L16.787 16.3636L16.126 15.6988C16.787 16.3636 16.7861 16.3645 16.7852 16.3654L16.7834 16.3672L16.7796 16.3709L16.7714 16.3787L16.7531 16.3958C16.74 16.4077 16.7249 16.4209 16.708 16.4349C16.674 16.463 16.6323 16.4949 16.5823 16.5283C16.4823 16.5954 16.3501 16.6683 16.1841 16.7302C15.8455 16.8563 15.399 16.924 14.8455 16.8391C13.762 16.6729 12.3267 15.9343 10.4179 14.0363C8.50984 12.1391 7.76493 10.7104 7.59713 9.62881C7.51133 9.07574 7.57976 8.62912 7.70742 8.2903C7.76999 8.12425 7.84372 7.99222 7.91138 7.89235C7.94512 7.84254 7.97724 7.80091 8.00558 7.76709C8.01975 7.75018 8.03299 7.7352 8.04505 7.72211L8.06221 7.70388L8.07007 7.69581L8.07381 7.69203L8.07563 7.6902C8.07653 7.68931 8.07742 7.68842 8.73844 8.35321L8.07742 7.68842L8.43594 7.33193C8.97169 6.79922 9.04673 5.91491 8.54237 5.24119L6.96614 3.13569Z" fill="white"/>
+                    </svg>
+                  </div>
+                  <!-- /.template-contacts-svgBx -->
+                  <a href="tel: +7 (939) 555-41-27">+7 (939) 555-41-27</a>
+                </div>
+                <!-- /.template-contactsBx -->
+                <div class="template-contactsBx">
+                  <div class="template-contacts-svgBx">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.25 10.6433C6.25 6.14588 10.1675 2.5 15 2.5C19.8325 2.5 23.75 6.14588 23.75 10.6433C23.75 15.1055 20.9573 20.3124 16.6001 22.1744C15.5843 22.6085 14.4157 22.6085 13.3999 22.1744C9.0427 20.3124 6.25 15.1055 6.25 10.6433Z" stroke="white" stroke-width="1.5"/>
+                      <path d="M17.5 11.25C17.5 12.6307 16.3807 13.75 15 13.75C13.6193 13.75 12.5 12.6307 12.5 11.25C12.5 9.86929 13.6193 8.75 15 8.75C16.3807 8.75 17.5 9.86929 17.5 11.25Z" stroke="white" stroke-width="1.5"/>
+                      <path d="M26.2007 19.375C27.0324 20.1281 27.5 20.977 27.5 21.875C27.5 24.9816 21.9036 27.5 15 27.5C8.09644 27.5 2.5 24.9816 2.5 21.875C2.5 20.977 2.96765 20.1281 3.79933 19.375" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <!-- /.template-contacts-svgBx -->
+                  <p>Москва, улица Дыбенко, 7/1</p>
+                </div>
+                <!-- /.template-contactsBx -->
+                <div class="template-contactsBx">
+                  <div class="template-contacts-svgBx">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="15" cy="15" r="12.5" stroke="white" stroke-width="1.5"/>
+                      <path d="M15 10V15L18.125 18.125" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <!-- /.template-contacts-svgBx -->
+                  <p>Ежедневно с 09:00 до 21:00</p>
+                </div>
+                <!-- /.template-contactsBx -->
+              </div>
+              <!-- /.template-contacts -->
+
+              <button class="pb max-w template__button" data-type="form">Заказать ремонт</button>
+            </div>
+            <div class="template-box">
+              <div class="template-map">
+                <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/ulitsa_dybenko_7_1/Z04YcgBpSEQCQFtvfXR2eXlgYg==/?indoorLevel=1&ll=37.479115%2C55.878536&utm_medium=mapframe&utm_source=maps&z=17.08" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Дыбенко, 7/1 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=37.479115%2C55.878536&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgozMjA5MTcwMjg3EjrQoNC-0YHRgdC40Y8sINCc0L7RgdC60LLQsCwg0YPQu9C40YbQsCDQlNGL0LHQtdC90LrQviwgNy8xIgoNnuoVQhWeg19C&z=17.08" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.template__container -->
+      </section>
+      <!-- /.template -->
+    </main>
+    <footer class="footer mt-60">
+      <div class="footer__container">
+        <div class="footer-inner">
+          <div class="footer-box">
+            <div class="footer-logoBx">
+              <img src="./images/footer/logo.svg" alt="">
+            </div>
+            <!-- /.footer-logoBx -->
+            <div class="footer-docs">
+              <a href="" class="footer-docs__item">Политика конфиденциальности</a>
+              <a href="" class="footer-docs__item">Пользовательское соглашение</a>
+              <p class="footer-docs__item">© 2023. Все права защищены.</p>
+              <!-- /.footer__notice -->
+            </div>
+            <!-- /.footer-docs -->
+          </div>
+          <div class="footer-box">
+            <ul class="footer-pages">
+              <li class="footer-pages__item"><a href="" class="footer-pages__link">Ремонт</a></li>
+              <li class="footer-pages__item"><a href="" class="footer-pages__link">Диагностика</a></li>
+              <li class="footer-pages__item"><a href="" class="footer-pages__link">О нас</a></li>
+              <li class="footer-pages__item"><a href="" class="footer-pages__link">Цены</a></li>
+              <li class="footer-pages__item"><a href="" class="footer-pages__link">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer-box">
+            <div class="footer-address">
+              <p class="footer-address__title">Адрес:</p>
+              <!-- /.footer-address__title -->
+              <p class="footer-address__content">Москва, улица Дыбенко, 7/1</p>
+              <!-- /.footer-address__content -->
+            </div>
+            <!-- /.footer-address -->
+            <div class="footer-address">
+              <p class="footer-address__title">Номер:</p>
+              <!-- /.footer-address__title -->
+              <a href="tel: +7 (939) 555-41-27" class="footer-address__content">+7 (939) 555-41-27</a>
+              <!-- /.footer-address__content -->
+            </div>
+            <!-- /.footer-address -->
+            <div class="footer-address">
+              <p class="footer-address__title">Время:</p>
+              <!-- /.footer-address__title -->
+              <p class="footer-address__content">Ежедневно с 09:00 до 21:00</p>
+              <!-- /.footer-address__content -->
+            </div>
+            <!-- /.footer-address -->
+          </div>
+        </div>
+        <!-- /.footer-inner -->
+      </div>
+    </footer>
+    <script src="./static/plugins/jquery.min.js"></script>
+<script src="./static/plugins/jquery.maskedinput.min.js"></script>
+<script src="./static/plugins/slick.min.js"></script>
+<script src="js/app.js"></script>
+  </body>
+</html> 

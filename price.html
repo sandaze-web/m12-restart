@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="./static/css/color.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="./static/css/all.css">
+
+  <!-- ========== FAVICONS ========== -->
+  <link rel="apple-touch-icon" sizes="76x76" href="./static/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./static/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./static/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./static/favicon/safari-pinned-tab.svg" color="#5bbad5">
+
+  <title>Главная</title>
+</head>
+  <body>
+    <div class="_overlay-bg modal modal-form" data-popup="form">
+  <div class="modal-formBx">
+    <p class="modal-form__title">Нужен ремонт или консультация?</p>
+    <!-- /.modal-form__title -->
+    <p class="modal-form__subtitle">Заполните форму ниже и наш менеджер свяжется с вами в течение 15 минут!</p>
+    <!-- /.modal-form__subtitle -->
+    <form action="#">
+      <div class="modal-form-inputBx"><input type="text" required placeholder="Ваше имя"></div>
+      <div class="modal-form-inputBx"><input type="text" class="mask-phone" required placeholder="+7(___)___-__-__"></div>
+      <div class="modal-form-inputBx">
+        <select name="type-technics" id="">
+          <option value="" selected="selected">Тип устройства</option>
+          <option value="">Ноутбук</option>
+          <option value="">Планшет</option>
+          <option value="">Моноблок</option>
+        </select>
+      </div>
+      <button class="pb modal-form__button">Отправить</button>
+      <p class="modal-form__notice">Нажимая на кнопку «Отправить», вы соглашаетесь с <a href="#">Политикой обработки персональных
+        данных</a></p>
+      <!-- /.modal-form__notice -->
+    </form>
+    <svg class="button-close modal-form-cross" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 1L13 13" stroke="#C3C3C3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M13 1L1 13" stroke="#C3C3C3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+  <!-- /.formBx -->
+</div>
+
+<div class="_overlay-bg modal success">
+  <div class="success-box">
+    <div class="success-svgBx">
+      <svg width="48" height="35" viewBox="0 0 48 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M44.9999 3L16.1249 32L2.99994 18.8182" fill="#26C349"/>
+        <path d="M44.9999 3L16.1249 32L2.99994 18.8182" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <!-- /.success-svgBx -->
+    <p class="modal-form__title success__title">Заявка отправлена</p>
+    <p class="modal-form__subtitle success__subtitle">Наш менеджер свяжется с вами в ближайшее время!</p>
+
+    <svg class="button-close modal-form-cross success-cross" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 1L13 13" stroke="#C3C3C3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M13 1L1 13" stroke="#C3C3C3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+</div>
+
+<div class="_overlay-bg modal success">
+  <div class="success-box">
+    <div class="success-svgBx red">
+      <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.95625 38.6863L38.6425 2.00004" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M39.0437 38.6863L2.35751 2.00004" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <!-- /.success-svgBx -->
+    <p class="modal-form__title success__title">Ошибка</p>
+    <p class="modal-form__subtitle success__subtitle">Неверно введены данные, попробуйте снова</p>
+
+    <svg class="button-close modal-form-cross success-cross" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 1L13 13" stroke="#C3C3C3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M13 1L1 13" stroke="#C3C3C3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+</div>
+
+<header class="m12-header">
+  <div class="m12-header__container">
+    <div class="m12-header-inner">
+      <nav class="_overlay-bg m12-header-nav">
+        <div class="m12-header-navBx">
+          <ul>
+            <li class="m12-header-nav__item"><a href="" class="m12-header-nav__link">О нас</a></li>
+            <li class="m12-header-nav__item"><a href="" class="m12-header-nav__link">Ремонт</a></li>
+            <li class="m12-header-nav__item"><a href="" class="m12-header-nav__link">Диагностика</a></li>
+            <li class="m12-header-nav__item"><a href="" class="m12-header-nav__link">Цены</a></li>
+            <li class="m12-header-nav__item"><a href="" class="m12-header-nav__link">Контакты</a></li>
+          </ul>
+          <button class="mobile m12-why__button pb" data-type="form">Заказать ремонт</button>
+          <div class="mobile m12-header-phoneBx">
+            <a href="tel: +7 (939) 555-41-27" class="m12-header__phone">+7 (939) 555-41-27</a>
+            <!-- /.m12-header__phone -->
+            <p class="m12-header__text">Ежедневно с 09:00 до 21:00</p>
+            <!-- /.m12-header__text -->
+          </div>
+          <!-- /.m12-header-phoneBx -->
+          <p class="mobile m12-header__address">Москва, улица Дыбенко, 7/1</p>
+        </div>
+      </nav>
+      <p class="mobile m12-header__address">Москва, улица Дыбенко, 7/1</p>
+      <!-- /.m12-header__address -->
+      <a href="./" class="m12-header-logoBx">
+        <img src="./images/logo.svg" alt="" class="m12-header__logo">
+      </a>
+      <!-- /.m12-header-logoBx -->
+      <p class="m12-header__address desktop">Москва, улица Дыбенко, 7/1</p>
+      <!-- /.m12-header__address -->
+      <div class="m12-header-phoneBx">
+        <a href="tel: +7 (939) 555-41-27" class="m12-header__phone">+7 (939) 555-41-27</a>
+        <!-- /.m12-header__phone -->
+        <p class="m12-header__text">Ежедневно с 09:00 до 21:00</p>
+        <!-- /.m12-header__text -->
+      </div>
+      <!-- /.m12-header-phoneBx -->
+      <div class="header-burger">
+        <span></span>
+      </div>
+      <!-- /.header-burger -->
+    </div>
+    <!-- /.m12-header-inner -->
+  </div>
+</header>
+    <main class="main">
+      <section class="template">
+        <div class="template__container">
+          <div class="template-inner">
+            <div class="template-box">
+              <div class="template-crumbsBx">
+                <a href="" class="template-crumbsBx__link">Главная</a>
+                <div class="template-crumbsBx__arrow">
+                  <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.832 7.712L0.0880001 6.976L3.136 3.96L0.0880001 0.943999L0.832 0.207999L4.592 3.96L0.832 7.712Z" fill="white"/>
+                  </svg>
+                </div>
+                <a href="" class="template-crumbsBx__link">Цены</a>
+              </div>
+              <!-- /.template-crumbsBx -->
+              <h1 class="template__title ws-nowrap">Прайс лист на ремонт техники</h1>
+              <!-- /.template__title -->
+              <p class="template__subtitle">Компания начала активную деятельность несколько лет назад и уже смогла завоевать признание со стороны своих клиентов. meome.ru работает 365 дней в году, ежедневно удовлетворяя нужды обращающихся клиентов.</p>
+              <!-- /.template__subtitle -->
+              <button class="pb max-w template__button" data-type="form">Заказать ремонт</button>
+            </div>
+            <div class="template-box">
+              <div class="template-imgBx">
+                <img src="./images/template/price.png" alt="">
+              </div>
+              <!-- /.template-imgBx -->
+            </div>
+          </div>
+        </div>
+        <!-- /.template__container -->
+      </section>
+      <!-- /.template -->
+
+      <section class="price">
+        <div class="price__container">
+          <div class="price-box">
+            <div class="price__item">
+              <div class="price-titleBx">
+                <h3 class="price__title">Стоимость ремонта стиральных машин</h3>
+                <!-- /.price__title -->
+                <div class="m12-faq__item-arrow"><span></span></div>
+                <!-- /.price__arrow -->
+              </div>
+              <!-- /.price-titleBx -->
+              <div class="price-helper">
+                <div class="price-wrapper">
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Диагностика</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count">Бесплатно</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена подшипника</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 3900 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена ТЭНа</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 1450 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена амортизаторов</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 3100 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена люка</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 1250 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Чистка фильтров</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 1400 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена ремней</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 900 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена ремней</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 900 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                </div>
+                <!-- /.price-wrapper --></div>
+            </div>
+            <!-- /.price__item -->
+            <div class="price__item">
+              <div class="price-titleBx">
+                <h3 class="price__title">Стоимость ремонта посудомоечных машин</h3>
+                <!-- /.price__title -->
+                <div class="m12-faq__item-arrow"><span></span></div>
+                <!-- /.price__arrow -->
+              </div>
+              <!-- /.price-titleBx -->
+              <div class="price-helper">
+                <div class="price-wrapper">
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Диагностика</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count">Бесплатно</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена подшипника</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 3900 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена ТЭНа</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 1450 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена амортизаторов</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 3100 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена люка</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 1250 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Чистка фильтров</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 1400 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена ремней</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 900 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена ремней</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 900 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                </div>
+                <!-- /.price-wrapper --></div>
+            </div>
+            <!-- /.price__item -->
+            <div class="price__item">
+              <div class="price-titleBx">
+                <h3 class="price__title">Стоимость ремонта проекторов</h3>
+                <!-- /.price__title -->
+                <div class="m12-faq__item-arrow"><span></span></div>
+                <!-- /.price__arrow -->
+              </div>
+              <!-- /.price-titleBx -->
+              <div class="price-helper">
+                <div class="price-wrapper">
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Диагностика</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count">Бесплатно</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена подшипника</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 3900 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена ТЭНа</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 1450 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена амортизаторов</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 3100 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена люка</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 1250 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Чистка фильтров</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 1400 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена ремней</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 900 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена ремней</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 900 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                </div>
+                <!-- /.price-wrapper --></div>
+            </div>
+            <!-- /.price__item -->
+            <div class="price__item">
+              <div class="price-titleBx">
+                <h3 class="price__title">Стоимость ремонта планшетов</h3>
+                <!-- /.price__title -->
+                <div class="m12-faq__item-arrow"><span></span></div>
+                <!-- /.price__arrow -->
+              </div>
+              <!-- /.price-titleBx -->
+              <div class="price-helper">
+                <div class="price-wrapper">
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Диагностика</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count">Бесплатно</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена подшипника</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 3900 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена ТЭНа</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 1450 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена амортизаторов</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 3100 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена люка</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 1250 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Чистка фильтров</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 1400 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена ремней</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 900 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена ремней</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 900 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                </div>
+                <!-- /.price-wrapper --></div>
+            </div>
+            <!-- /.price__item -->
+            <div class="price__item">
+              <div class="price-titleBx">
+                <h3 class="price__title">Стоимость ремонта холодильников</h3>
+                <!-- /.price__title -->
+                <div class="m12-faq__item-arrow"><span></span></div>
+                <!-- /.price__arrow -->
+              </div>
+              <!-- /.price-titleBx -->
+              <div class="price-helper">
+                <div class="price-wrapper">
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Диагностика</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count">Бесплатно</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена подшипника</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 3900 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена ТЭНа</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 1450 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена амортизаторов</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 3100 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена люка</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 1250 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Чистка фильтров</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 1400 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена ремней</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 900 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена ремней</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 900 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                </div>
+                <!-- /.price-wrapper --></div>
+            </div>
+            <!-- /.price__item -->
+            <div class="price__item">
+              <div class="price-titleBx">
+                <h3 class="price__title">Стоимость ремонта ноутбуков</h3>
+                <!-- /.price__title -->
+                <div class="m12-faq__item-arrow"><span></span></div>
+                <!-- /.price__arrow -->
+              </div>
+              <!-- /.price-titleBx -->
+              <div class="price-helper">
+                <div class="price-wrapper">
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Диагностика</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count">Бесплатно</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена подшипника</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 3900 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена ТЭНа</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 1450 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена амортизаторов</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 3100 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена люка</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 1250 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Чистка фильтров</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 1400 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена ремней</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 900 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена ремней</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 900 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                </div>
+                <!-- /.price-wrapper --></div>
+            </div>
+            <!-- /.price__item -->
+            <div class="price__item">
+              <div class="price-titleBx">
+                <h3 class="price__title">Стоимость ремонта телевизоров</h3>
+                <!-- /.price__title -->
+                <div class="m12-faq__item-arrow"><span></span></div>
+                <!-- /.price__arrow -->
+              </div>
+              <!-- /.price-titleBx -->
+              <div class="price-helper">
+                <div class="price-wrapper">
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Диагностика</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count">Бесплатно</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена подшипника</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 3900 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена ТЭНа</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 1450 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена амортизаторов</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 3100 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена люка</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 1250 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Чистка фильтров</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 1400 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена ремней</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 900 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                  <div class="price-wrapper__item">
+                    <p class="price-wrapper__title">Замена ремней</p>
+                    <!-- /.price-wrapper__title -->
+                    <p class="price-wrapper__count"><span>от</span> 900 ₽</p>
+                    <!-- /.price-wrapper__count -->
+                  </div>
+                  <!-- /.price-wrapper__item -->
+                </div>
+                <!-- /.price-wrapper --></div>
+            </div>
+            <!-- /.price__item -->
+          </div>
+          <!-- /.price-box -->
+        </div>
+        <!-- /.price__container -->
+      </section>
+      <!-- /.price -->
+    </main>
+    <footer class="footer">
+  <div class="footer__container">
+    <div class="footer-inner">
+      <div class="footer-box">
+        <div class="footer-logoBx">
+          <img src="./images/footer/logo.svg" alt="">
+        </div>
+        <!-- /.footer-logoBx -->
+        <div class="footer-docs">
+          <a href="" class="footer-docs__item">Политика конфиденциальности</a>
+          <a href="" class="footer-docs__item">Пользовательское соглашение</a>
+          <p class="footer-docs__item">© 2023. Все права защищены.</p>
+          <!-- /.footer__notice -->
+        </div>
+        <!-- /.footer-docs -->
+      </div>
+      <div class="footer-box">
+        <ul class="footer-pages">
+          <li class="footer-pages__item"><a href="" class="footer-pages__link">Ремонт</a></li>
+          <li class="footer-pages__item"><a href="" class="footer-pages__link">Диагностика</a></li>
+          <li class="footer-pages__item"><a href="" class="footer-pages__link">О нас</a></li>
+          <li class="footer-pages__item"><a href="" class="footer-pages__link">Цены</a></li>
+          <li class="footer-pages__item"><a href="" class="footer-pages__link">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <div class="footer-address">
+          <p class="footer-address__title">Адрес:</p>
+          <!-- /.footer-address__title -->
+          <p class="footer-address__content">Москва, улица Дыбенко, 7/1</p>
+          <!-- /.footer-address__content -->
+        </div>
+        <!-- /.footer-address -->
+        <div class="footer-address">
+          <p class="footer-address__title">Номер:</p>
+          <!-- /.footer-address__title -->
+          <a href="tel: +7 (939) 555-41-27" class="footer-address__content">+7 (939) 555-41-27</a>
+          <!-- /.footer-address__content -->
+        </div>
+        <!-- /.footer-address -->
+        <div class="footer-address">
+          <p class="footer-address__title">Время:</p>
+          <!-- /.footer-address__title -->
+          <p class="footer-address__content">Ежедневно с 09:00 до 21:00</p>
+          <!-- /.footer-address__content -->
+        </div>
+        <!-- /.footer-address -->
+      </div>
+    </div>
+    <!-- /.footer-inner -->
+  </div>
+</footer>
+    <script src="./static/plugins/jquery.min.js"></script>
+<script src="./static/plugins/jquery.maskedinput.min.js"></script>
+<script src="./static/plugins/slick.min.js"></script>
+<script src="js/app.js"></script>
+  </body>
+</html> 

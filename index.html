@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="./static/css/color.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="./static/css/all.css">
+
+  <!-- ========== FAVICONS ========== -->
+  <link rel="apple-touch-icon" sizes="76x76" href="./static/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./static/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./static/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./static/favicon/safari-pinned-tab.svg" color="#5bbad5">
+
+  <title>Главная</title>
+</head>
+<body>
+<div class="_overlay-bg modal modal-form" data-popup="form">
+  <div class="modal-formBx">
+    <p class="modal-form__title">Нужен ремонт или консультация?</p>
+    <!-- /.modal-form__title -->
+    <p class="modal-form__subtitle">Заполните форму ниже и наш менеджер свяжется с вами в течение 15 минут!</p>
+    <!-- /.modal-form__subtitle -->
+    <form action="#">
+      <div class="modal-form-inputBx"><input type="text" required placeholder="Ваше имя"></div>
+      <div class="modal-form-inputBx"><input type="text" class="mask-phone" required placeholder="+7(___)___-__-__"></div>
+      <div class="modal-form-inputBx">
+        <select name="type-technics" id="">
+          <option value="" selected="selected">Тип устройства</option>
+          <option value="">Ноутбук</option>
+          <option value="">Планшет</option>
+          <option value="">Моноблок</option>
+        </select>
+      </div>
+      <button class="pb modal-form__button">Отправить</button>
+      <p class="modal-form__notice">Нажимая на кнопку «Отправить», вы соглашаетесь с <a href="#">Политикой обработки персональных
+        данных</a></p>
+      <!-- /.modal-form__notice -->
+    </form>
+    <svg class="button-close modal-form-cross" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 1L13 13" stroke="#C3C3C3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M13 1L1 13" stroke="#C3C3C3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+  <!-- /.formBx -->
+</div>
+
+<div class="_overlay-bg modal success">
+  <div class="success-box">
+    <div class="success-svgBx">
+      <svg width="48" height="35" viewBox="0 0 48 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M44.9999 3L16.1249 32L2.99994 18.8182" fill="#26C349"/>
+        <path d="M44.9999 3L16.1249 32L2.99994 18.8182" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <!-- /.success-svgBx -->
+    <p class="modal-form__title success__title">Заявка отправлена</p>
+    <p class="modal-form__subtitle success__subtitle">Наш менеджер свяжется с вами в ближайшее время!</p>
+
+    <svg class="button-close modal-form-cross success-cross" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 1L13 13" stroke="#C3C3C3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M13 1L1 13" stroke="#C3C3C3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+</div>
+
+<div class="_overlay-bg modal success">
+  <div class="success-box">
+    <div class="success-svgBx red">
+      <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.95625 38.6863L38.6425 2.00004" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M39.0437 38.6863L2.35751 2.00004" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <!-- /.success-svgBx -->
+    <p class="modal-form__title success__title">Ошибка</p>
+    <p class="modal-form__subtitle success__subtitle">Неверно введены данные, попробуйте снова</p>
+
+    <svg class="button-close modal-form-cross success-cross" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 1L13 13" stroke="#C3C3C3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M13 1L1 13" stroke="#C3C3C3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+</div>
+
+<header class="m12-header">
+  <div class="m12-header__container">
+    <div class="m12-header-inner">
+      <nav class="_overlay-bg m12-header-nav">
+        <div class="m12-header-navBx">
+          <ul>
+            <li class="m12-header-nav__item"><a href="" class="m12-header-nav__link">О нас</a></li>
+            <li class="m12-header-nav__item"><a href="" class="m12-header-nav__link">Ремонт</a></li>
+            <li class="m12-header-nav__item"><a href="" class="m12-header-nav__link">Диагностика</a></li>
+            <li class="m12-header-nav__item"><a href="" class="m12-header-nav__link">Цены</a></li>
+            <li class="m12-header-nav__item"><a href="" class="m12-header-nav__link">Контакты</a></li>
+          </ul>
+          <button class="mobile m12-why__button pb" data-type="form">Заказать ремонт</button>
+          <div class="mobile m12-header-phoneBx">
+            <a href="tel: +7 (939) 555-41-27" class="m12-header__phone">+7 (939) 555-41-27</a>
+            <!-- /.m12-header__phone -->
+            <p class="m12-header__text">Ежедневно с 09:00 до 21:00</p>
+            <!-- /.m12-header__text -->
+          </div>
+          <!-- /.m12-header-phoneBx -->
+          <p class="mobile m12-header__address">Москва, улица Дыбенко, 7/1</p>
+        </div>
+      </nav>
+      <p class="mobile m12-header__address">Москва, улица Дыбенко, 7/1</p>
+      <!-- /.m12-header__address -->
+      <a href="./" class="m12-header-logoBx">
+        <img src="./images/logo.svg" alt="" class="m12-header__logo">
+      </a>
+      <!-- /.m12-header-logoBx -->
+      <p class="m12-header__address desktop">Москва, улица Дыбенко, 7/1</p>
+      <!-- /.m12-header__address -->
+      <div class="m12-header-phoneBx">
+        <a href="tel: +7 (939) 555-41-27" class="m12-header__phone">+7 (939) 555-41-27</a>
+        <!-- /.m12-header__phone -->
+        <p class="m12-header__text">Ежедневно с 09:00 до 21:00</p>
+        <!-- /.m12-header__text -->
+      </div>
+      <!-- /.m12-header-phoneBx -->
+      <div class="header-burger">
+        <span></span>
+      </div>
+      <!-- /.header-burger -->
+    </div>
+    <!-- /.m12-header-inner -->
+  </div>
+</header>
+<main class="main">
+    <section class="m12-content">
+        <div class="m12-content__container">
+            <div class="m12-content-inner">
+                <div class="m12-content-item">
+                    <div class="m12-content-imgBx"><img src="./images/content/main.png" alt=""></div>
+                    <!-- /.m12-content-imgBx -->
+                    <img src="./images/content/pattern.png" alt="" class="m12-content__pattern">
+                </div>
+                <!-- /.m12-content-item -->
+                <div class="m12-content-box">
+                    <h1 class="m12-content__title">Качественный ремонт техники любой сложности </h1>
+                    <!-- /.m12-content__title -->
+                    <p class="m12-content__subtitle">Скидка 10% при оформлении заказа онлайн</p>
+                    <!-- /.m12-content__subtitle -->
+                    <div class="m12-content-tags">
+                        <div class="m12-content-tags__item">
+                            <div class="m12-content-tags-svgBx">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.9324 8.77814C14.4074 7.92605 14.6449 7.5 15 7.5C15.3551 7.5 15.5926 7.92605 16.0676 8.77814L16.1904 8.99859C16.3254 9.24073 16.3929 9.36179 16.4981 9.44168C16.6034 9.52156 16.7344 9.55121 16.9965 9.61052L17.2352 9.66451C18.1576 9.87321 18.6187 9.97756 18.7285 10.3304C18.8382 10.6832 18.5238 11.0509 17.895 11.7862L17.7323 11.9765C17.5536 12.1854 17.4642 12.2899 17.4241 12.4191C17.3839 12.5484 17.3974 12.6878 17.4244 12.9666L17.449 13.2204C17.544 14.2015 17.5916 14.692 17.3043 14.9101C17.0171 15.1282 16.5852 14.9293 15.7216 14.5317L15.4982 14.4288C15.2528 14.3158 15.1301 14.2593 15 14.2593C14.8699 14.2593 14.7472 14.3158 14.5018 14.4288L14.2784 14.5317C13.4148 14.9293 12.9829 15.1282 12.6957 14.9101C12.4084 14.692 12.456 14.2015 12.551 13.2204L12.5756 12.9666C12.6026 12.6878 12.6161 12.5484 12.5759 12.4191C12.5358 12.2899 12.4464 12.1854 12.2677 11.9765L12.105 11.7862C11.4762 11.0509 11.1618 10.6832 11.2715 10.3304C11.3813 9.97756 11.8424 9.87321 12.7648 9.66451L13.0035 9.61052C13.2656 9.55121 13.3966 9.52156 13.5019 9.44168C13.6071 9.36179 13.6746 9.24073 13.8096 8.99859L13.9324 8.77814Z" stroke="white" stroke-width="2"/>
+                                    <path d="M23.75 11.25C23.75 16.0825 19.8325 20 15 20C10.1675 20 6.25 16.0825 6.25 11.25C6.25 6.41751 10.1675 2.5 15 2.5C19.8325 2.5 23.75 6.41751 23.75 11.25Z" stroke="white" stroke-width="2"/>
+                                    <path d="M15 20.0848L10.2857 24.966C9.61054 25.6651 9.27296 26.0146 8.98708 26.1355C8.33565 26.4112 7.61303 26.1753 7.27034 25.5752C7.11996 25.3118 7.0731 24.8368 6.97938 23.8868C6.92646 23.3504 6.9 23.0822 6.81969 22.8576C6.63989 22.3547 6.26207 21.9635 5.77638 21.7774C5.55943 21.6942 5.30041 21.6668 4.78236 21.612C3.86484 21.515 3.40607 21.4665 3.15173 21.3108C2.57215 20.9559 2.34435 20.2077 2.61054 19.5332C2.72735 19.2372 3.06492 18.8877 3.74007 18.1887L6.81969 15" stroke="white" stroke-width="2"/>
+                                    <path d="M15 20.0848L19.7143 24.966C20.3895 25.6651 20.727 26.0146 21.0129 26.1355C21.6644 26.4112 22.387 26.1753 22.7297 25.5752C22.88 25.3118 22.9269 24.8368 23.0206 23.8868C23.0735 23.3504 23.1 23.0822 23.1803 22.8576C23.3601 22.3547 23.7379 21.9635 24.2236 21.7774C24.4406 21.6942 24.6996 21.6668 25.2176 21.612C26.1352 21.515 26.5939 21.4665 26.8483 21.3108C27.4279 20.9559 27.6557 20.2077 27.3895 19.5332C27.2726 19.2372 26.9351 18.8877 26.2599 18.1887L23.1803 15" stroke="white" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <!-- /.m12-content-tags-svgBx -->
+                            <p class="m12-content-tags__title">Дадим гарантию до 2 лет</p>
+                            <!-- /.m12-content-tags__title -->
+                        </div>
+                        <!-- /.m12-content-tags__item -->
+                        <div class="m12-content-tags__item">
+                            <div class="m12-content-tags-svgBx">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="3.75" stroke="white" stroke-width="2"/>
+                                    <path d="M17.2067 2.6903C16.7473 2.5 16.1648 2.5 15 2.5C13.8351 2.5 13.2527 2.5 12.7933 2.6903C12.1807 2.94404 11.694 3.43072 11.4403 4.04329C11.3245 4.32293 11.2791 4.64813 11.2614 5.12249C11.2353 5.8196 10.8778 6.46487 10.2737 6.81366C9.66955 7.16246 8.93199 7.14942 8.31524 6.82345C7.89556 6.60163 7.59126 6.47828 7.29117 6.43877C6.6338 6.35223 5.96898 6.53037 5.44295 6.934C5.04843 7.23672 4.75722 7.74112 4.17479 8.74991C3.59236 9.75871 3.30115 10.2631 3.23624 10.7561C3.1497 11.4135 3.32784 12.0783 3.73147 12.6043C3.9157 12.8444 4.17463 13.0463 4.57648 13.2988C5.16725 13.67 5.54736 14.3023 5.54732 15C5.54729 15.6977 5.16719 16.3299 4.57648 16.7011C4.17456 16.9536 3.9156 17.1554 3.73135 17.3956C3.32771 17.9216 3.14958 18.5864 3.23612 19.2438C3.30103 19.7368 3.59224 20.2412 4.17467 21.25C4.75709 22.2588 5.04831 22.7632 5.44283 23.0659C5.96885 23.4695 6.63368 23.6477 7.29105 23.5611C7.59112 23.5216 7.8954 23.3983 8.31505 23.1765C8.93184 22.8505 9.66945 22.8375 10.2736 23.1863C10.8778 23.5351 11.2353 24.1804 11.2614 24.8776C11.2791 25.3519 11.3245 25.6771 11.4403 25.9567C11.694 26.5693 12.1807 27.056 12.7933 27.3097C13.2527 27.5 13.8351 27.5 15 27.5C16.1648 27.5 16.7473 27.5 17.2067 27.3097C17.8193 27.056 18.306 26.5693 18.5597 25.9567C18.6755 25.6771 18.7208 25.3519 18.7386 24.8775C18.7646 24.1804 19.1221 23.5351 19.7262 23.1863C20.3304 22.8374 21.068 22.8504 21.6848 23.1764C22.1045 23.3982 22.4087 23.5216 22.7088 23.5611C23.3662 23.6476 24.031 23.4695 24.557 23.0658C24.9515 22.7631 25.2428 22.2587 25.8252 21.2499C26.4076 20.2411 26.6988 19.7367 26.7637 19.2437C26.8503 18.5863 26.6721 17.9215 26.2685 17.3955C26.0843 17.1554 25.8253 16.9535 25.4234 16.701C24.8327 16.3298 24.4526 15.6975 24.4527 14.9999C24.4527 14.3023 24.8328 13.6701 25.4234 13.299C25.8254 13.0464 26.0844 12.8446 26.2686 12.6044C26.6723 12.0784 26.8504 11.4136 26.7639 10.7562C26.6989 10.2632 26.4077 9.75879 25.8253 8.75C25.2429 7.74121 24.9517 7.23681 24.5571 6.93409C24.0311 6.53045 23.3663 6.35231 22.7089 6.43886C22.4089 6.47836 22.1046 6.6017 21.6849 6.8235C21.0681 7.14949 20.3305 7.16252 19.7263 6.8137C19.1222 6.46488 18.7647 5.81958 18.7386 5.12242C18.7208 4.6481 18.6755 4.32291 18.5597 4.04329C18.306 3.43072 17.8193 2.94404 17.2067 2.6903Z" stroke="white" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <!-- /.m12-content-tags-svgBx -->
+                            <p class="m12-content-tags__title">Ремонтируем на дому и сервисном центре</p>
+                            <!-- /.m12-content-tags__title -->
+                        </div>
+                        <!-- /.m12-content-tags__item -->
+                        <div class="m12-content-tags__item">
+                            <div class="m12-content-tags-svgBx">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.5 18.125C17.5 16.0539 19.1789 14.375 21.25 14.375C23.321 14.375 25 16.0539 25 18.125C25 20.1961 23.321 21.875 21.25 21.875C19.1789 21.875 17.5 20.1961 17.5 18.125Z" stroke="white" stroke-width="2"/>
+                                    <path d="M4.99997 11.875C4.99997 13.9461 6.6789 15.625 8.74997 15.625C10.821 15.625 12.5 13.9461 12.5 11.875C12.5 9.80393 10.821 8.125 8.74997 8.125C6.6789 8.125 4.99997 9.80393 4.99997 11.875Z" stroke="white" stroke-width="2"/>
+                                    <path d="M21.1981 11.25L21.1981 2.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M8.69812 18.75L8.69812 27.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M21.1981 27.5L21.1981 25" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M8.69812 2.5L8.69812 5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <!-- /.m12-content-tags-svgBx -->
+                            <p class="m12-content-tags__title">Бесплатная диагностика в день обращения</p>
+                            <!-- /.m12-content-tags__title -->
+                        </div>
+                        <!-- /.m12-content-tags__item -->
+                        <div class="m12-content-tags__item">
+                            <div class="m12-content-tags-svgBx">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.75 12.5C8.75 10.7322 8.75 9.84835 9.29917 9.29917C9.84835 8.75 10.7322 8.75 12.5 8.75H17.5C19.2678 8.75 20.1517 8.75 20.7008 9.29917C21.25 9.84835 21.25 10.7322 21.25 12.5V17.5C21.25 19.2678 21.25 20.1517 20.7008 20.7008C20.1517 21.25 19.2678 21.25 17.5 21.25H12.5C10.7322 21.25 9.84835 21.25 9.29917 20.7008C8.75 20.1517 8.75 19.2678 8.75 17.5V12.5Z" stroke="white" stroke-width="2"/>
+                                    <path d="M5 15C5 10.286 5 7.92893 6.46447 6.46447C7.92893 5 10.286 5 15 5C19.714 5 22.0711 5 23.5355 6.46447C25 7.92893 25 10.286 25 15C25 19.714 25 22.0711 23.5355 23.5355C22.0711 25 19.714 25 15 25C10.286 25 7.92893 25 6.46447 23.5355C5 22.0711 5 19.714 5 15Z" stroke="white" stroke-width="2"/>
+                                    <path d="M5 15H2.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M27.5 15H25" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M5 11.25H2.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M27.5 11.25H25" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M5 18.75H2.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M27.5 18.75H25" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M15 25L15 27.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M15 2.5L15 5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M11.25 25L11.25 27.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M11.25 2.5L11.25 5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M18.75 25L18.75 27.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M18.75 2.5L18.75 5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <!-- /.m12-content-tags-svgBx -->
+                            <p class="m12-content-tags__title">Запчасти для любых марок техники</p>
+                            <!-- /.m12-content-tags__title -->
+                        </div>
+                        <!-- /.m12-content-tags__item -->
+                    </div>
+                    <!-- /.m12-content-tags -->
+
+                    <button class="pb m12-content__button" data-type="form">Заказать ремонт</button>
+                    <!-- /.m12-content__button pb -->
+                </div>
+                <!-- /.m12-content-box -->
+            </div>
+            <!-- /.m12-content-inner -->
+        </div>
+        <!-- /.m12-content__container -->
+    </section>
+    <!-- /.m12-content -->
+
+    <section class="slider">
+        <div class="slider-box">
+            <div class="slider-itemBx">
+                <a href="#" class="slider__item">
+                    <p class="slider__title">Стиральная машина</p>
+                    <div class="slider-imgBx">
+                        <div class="slider__arrow"></div>
+                        <img src="./images/slider/1.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-itemBx">
+                <a href="#" class="slider__item">
+                    <p class="slider__title">Посудомоечная машина</p>
+                    <div class="slider-imgBx">
+                        <div class="slider__arrow"></div>
+                        <img src="./images/slider/2.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-itemBx">
+                <a href="#" class="slider__item">
+                    <p class="slider__title">Проекторы</p>
+                    <div class="slider-imgBx">
+                        <div class="slider__arrow"></div>
+                        <img src="./images/slider/3.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-itemBx">
+                <a href="#" class="slider__item">
+                    <p class="slider__title">Планшеты</p>
+                    <div class="slider-imgBx">
+                        <div class="slider__arrow"></div>
+                        <img src="./images/slider/4.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-itemBx">
+                <a href="#" class="slider__item">
+                    <p class="slider__title">Ноутбуки</p>
+                    <div class="slider-imgBx">
+                        <div class="slider__arrow"></div>
+                        <img src="./images/slider/5.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-itemBx">
+                <a href="#" class="slider__item">
+                    <p class="slider__title">Телевизор</p>
+                    <div class="slider-imgBx">
+                        <div class="slider__arrow"></div>
+                        <img src="./images/slider/6.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-itemBx">
+                <a href="#" class="slider__item">
+                    <p class="slider__title">Телевизор</p>
+                    <div class="slider-imgBx">
+                        <div class="slider__arrow"></div>
+                        <img src="./images/slider/6.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-itemBx">
+                <a href="#" class="slider__item">
+                    <p class="slider__title">Телевизор</p>
+                    <div class="slider-imgBx">
+                        <div class="slider__arrow"></div>
+                        <img src="./images/slider/6.png" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- /.sliderr-box -->
+        <div class="slider-arrowBx">
+            <svg class="slider-arrowBx__arrow left" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 14L1 7.5L8 1" stroke="#5F8AE7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <svg class="slider-arrowBx__arrow right" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.999999 14L8 7.5L1 1" stroke="#5F8AE7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+        </div>
+        <!-- /.slider-arrowBx -->
+    </section>
+    <!-- /.sliderr -->
+
+    <section class="m12-stages">
+        <div class="m12-stages__container">
+            <h2 class="title m12-stages__title">Этапы работы</h2>
+            <!-- /.m12-stages__title title -->
+            <div class="m12-stages-box">
+                <div class="m12-stages__item">
+                    <div class="m12-stages__item-count">01</div>
+                    <!-- /.m12-stages__item-count -->
+                    <p class="m12-stages__item-title">Диагностика</p>
+                    <!-- /.m12-stages__item-title -->
+                    <p class="m12-stages__item-subtitle">Вы или наш курьер привозите аппарат в сервис центр. Вызов
+                        курьера предоставляется бесплатно.</p>
+                    <!-- /.m12-stages__item-subtitle -->
+                </div>
+                <!-- /.m12-stages__item -->
+                <div class="m12-stages__item">
+                    <div class="m12-stages__item-count">02</div>
+                    <!-- /.m12-stages__item-count -->
+                    <p class="m12-stages__item-title">Ремонт</p>
+                    <!-- /.m12-stages__item-title -->
+                    <p class="m12-stages__item-subtitle">Инженеры проводят полную диагностику: аппаратную, техническую.
+                        Процедура занимает около 30 минут.</p>
+                    <!-- /.m12-stages__item-subtitle -->
+                </div>
+                <!-- /.m12-stages__item -->
+                <div class="m12-stages__item">
+                    <div class="m12-stages__item-count">03</div>
+                    <!-- /.m12-stages__item-count -->
+                    <p class="m12-stages__item-title">Доставка</p>
+                    <!-- /.m12-stages__item-title -->
+                    <p class="m12-stages__item-subtitle">Менеджеры согласовывают
+                        с вами все условия ремонта: стоимость, сроки, гарантийные условия.</p>
+                    <!-- /.m12-stages__item-subtitle -->
+                </div>
+                <!-- /.m12-stages__item -->
+                <div class="m12-stages__item">
+                    <div class="m12-stages__item-count">04</div>
+                    <!-- /.m12-stages__item-count -->
+                    <p class="m12-stages__item-title">Согласование</p>
+                    <!-- /.m12-stages__item-title -->
+                    <p class="m12-stages__item-subtitle">Вы или наш курьер привозите аппарат в сервис центр. Вызов
+                        курьера предоставляется бесплатно.</p>
+                    <!-- /.m12-stages__item-subtitle -->
+                </div>
+                <!-- /.m12-stages__item -->
+                <div class="m12-stages__item">
+                    <div class="m12-stages__item-count">05</div>
+                    <!-- /.m12-stages__item-count -->
+                    <p class="m12-stages__item-title">Готово!</p>
+                    <!-- /.m12-stages__item-title -->
+                    <p class="m12-stages__item-subtitle">По окончании вы забираете
+                        или курьер доставляет на дом исправный гаджет с гарантийным бланком.</p>
+                    <!-- /.m12-stages__item-subtitle -->
+                </div>
+                <!-- /.m12-stages__item -->
+                <img src="./images/stages/dashed.svg" alt="" class="m12-stages__steps">
+                <img src="./images/stages/dashed-mobile.svg" alt="" class="mobile m12-stages__steps">
+                <!-- /.m12-stages__steps -->
+            </div>
+            <!-- /.m12-stages-box -->
+        </div>
+        <!-- /.m12-stages__container -->
+    </section>
+    <!-- /.m12-stages -->
+
+    <section class="m12-why">
+        <div class="m12-why__container">
+            <h2 class="title m12-why__title">Почему нас выбирают</h2>
+            <!-- /.m12-why__title title -->
+            <div class="m12-why-inner">
+                <div class="m12-why-box">
+                    <ul class="m12-why-lists">
+                        <li class="m12-why-lists__item">
+                            <div class="m12-why-lists__item-svgBx">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="16.5" cy="16.5" r="13.5" stroke="white" stroke-width="2"/>
+                                    <path d="M16 11V16.5385L19 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <!-- /.m12-why-lists__item-svgBx -->
+                            <div class="m12-why-lists__item-titleBx">
+                                <h3>Срочный ремонт</h3>
+                                <p>Большинство неисправностей техники устраняем за 2 часа</p>
+                            </div>
+                            <!-- /.m12-why-lists__item-titleBx -->
+                        </li>
+                        <!-- /.m12-why-lists__item -->
+                        <li class="m12-why-lists__item">
+                            <div class="m12-why-lists__item-svgBx">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.66681 11.3528C6.66681 6.55556 10.8455 2.66663 16.0001 2.66663C21.1548 2.66663 25.3335 6.55556 25.3335 11.3528C25.3335 16.1125 22.3546 21.6665 17.7069 23.6527C16.6234 24.1157 15.3768 24.1157 14.2934 23.6527C9.64569 21.6665 6.66681 16.1125 6.66681 11.3528Z" stroke="white" stroke-width="2"/>
+                                    <path d="M18.6665 12C18.6665 13.4728 17.4726 14.6667 15.9999 14.6667C14.5271 14.6667 13.3332 13.4728 13.3332 12C13.3332 10.5273 14.5271 9.33337 15.9999 9.33337C17.4726 9.33337 18.6665 10.5273 18.6665 12Z" stroke="white" stroke-width="2"/>
+                                    <path d="M27.9475 20.6666C28.8346 21.4699 29.3335 22.3754 29.3335 23.3333C29.3335 26.647 23.3639 29.3333 16.0001 29.3333C8.63635 29.3333 2.66681 26.647 2.66681 23.3333C2.66681 22.3754 3.16563 21.4699 4.05276 20.6666" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <!-- /.m12-why-lists__item-svgBx -->
+                            <div class="m12-why-lists__item-titleBx">
+                                <h3>Бесплатная доставка</h3>
+                                <p>Мы в шаговой доступности от станции метро, вы быстро нас найдете</p>
+                            </div>
+                            <!-- /.m12-why-lists__item-titleBx -->
+                        </li>
+                        <!-- /.m12-why-lists__item -->
+                        <li class="m12-why-lists__item">
+                            <div class="m12-why-lists__item-svgBx">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.0084 20.353C10.1554 20.8854 10.7062 21.1977 11.2385 21.0506C11.7709 20.9036 12.0832 20.3528 11.9361 19.8205L10.0084 20.353ZM8.10256 9.69939L9.06645 9.4331L8.10256 9.69939ZM6.2716 7.89343L6.00425 8.85703L6.2716 7.89343ZM4.26735 6.29958C3.73517 6.15193 3.18405 6.46365 3.0364 6.99583C2.88875 7.52802 3.20047 8.07913 3.73265 8.22678L4.26735 6.29958ZM26.9182 20.9674C27.4527 20.8285 27.7734 20.2826 27.6345 19.748C27.4956 19.2135 26.9497 18.8928 26.4151 19.0317L26.9182 20.9674ZM13.597 23.4119C14.0098 24.9061 13.1037 26.4826 11.4985 26.8998L12.0016 28.8355C14.6376 28.1504 16.2485 25.4987 15.5248 22.8793L13.597 23.4119ZM11.4985 26.8998C9.88288 27.3197 8.26163 26.3819 7.84534 24.8751L5.91756 25.4077C6.63771 28.0144 9.37594 29.5178 12.0016 28.8355L11.4985 26.8998ZM7.84534 24.8751C7.43254 23.3809 8.33867 21.8044 9.94386 21.3872L9.44081 19.4515C6.80474 20.1366 5.19392 22.7883 5.91756 25.4077L7.84534 24.8751ZM9.94386 21.3872C11.5595 20.9674 13.1807 21.9051 13.597 23.4119L15.5248 22.8793C14.8047 20.2726 12.0664 18.7692 9.44081 19.4515L9.94386 21.3872ZM11.9361 19.8205L9.06645 9.4331L7.13867 9.96568L10.0084 20.353L11.9361 19.8205ZM6.53894 6.92983L4.26735 6.29958L3.73265 8.22678L6.00425 8.85703L6.53894 6.92983ZM9.06645 9.4331C8.72895 8.21145 7.76146 7.26902 6.53894 6.92983L6.00425 8.85703C6.57171 9.01448 6.9943 9.44314 7.13867 9.96568L9.06645 9.4331ZM14.8125 24.1135L26.9182 20.9674L26.4151 19.0317L14.3094 22.1778L14.8125 24.1135Z" fill="white"/>
+                                    <path d="M12.7542 11.6407C12.1075 9.2999 11.7842 8.12952 12.333 7.20749C12.8819 6.28546 14.0886 5.97186 16.502 5.34465L19.0619 4.6794C21.4753 4.05219 22.682 3.73859 23.6327 4.27093C24.5833 4.80326 24.9066 5.97364 25.5533 8.3144L26.2392 10.7972C26.8859 13.1379 27.2092 14.3083 26.6604 15.2303C26.1115 16.1524 24.9048 16.466 22.4914 17.0932L19.9316 17.7584C17.5181 18.3856 16.3114 18.6992 15.3608 18.1669C14.4101 17.6346 14.0868 16.4642 13.4401 14.1234L12.7542 11.6407Z" stroke="white" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <!-- /.m12-why-lists__item-svgBx -->
+                            <div class="m12-why-lists__item-titleBx">
+                                <h3>Рядом с метро</h3>
+                                <p>Наш курьер бесплатно доставит устройство </p>
+                            </div>
+                            <!-- /.m12-why-lists__item-titleBx -->
+                        </li>
+                        <!-- /.m12-why-lists__item -->
+                    </ul>
+                    <!-- /.m12-why-lists -->
+                    <button class="pb m12-why__button" data-type="form">Заказать ремонт</button>
+                    <!-- /.m12-why__button -->
+                </div>
+                <!-- /.m12-why-box -->
+                <div class="m12-why-imgBx">
+                    <img src="./images/why/main.png" alt="">
+                </div>
+                <!-- /.m12-why-imgBx -->
+                <div class="mobile m12-why-buttonBx">
+                    <button class="pb m12-why__button" data-type="form">Заказать ремонт</button>
+                </div>
+            </div>
+            <!-- /.m12-why-inner -->
+        </div>
+        <!-- /.m12-why__container -->
+    </section>
+    <!-- /.m12-why -->
+
+    <section class="m12-faq">
+        <div class="m12-faq__container">
+            <h2 class="title m12-faq__title">Отвечаем на ваши вопросы</h2>
+            <!-- /.m12-faq__title title -->
+            <div class="m12-faq-box">
+                <div class="m12-faq-helper">
+                    <div class="m12-faq__item">
+                        <div class="m12-faq__item-titleBx">
+                            <p class="m12-faq__item-title">Я понимаю, какая поломка у моего прибора, для чего проводить
+                                диагностику?</p>
+                            <!-- /.m12-faq__item-title -->
+                            <div class="m12-faq__item-arrow"><span></span></div>
+                            <!-- /.m12-faq__item-arrow -->
+                        </div>
+                        <!-- /.m12-faq__item-titleBx -->
+                        <div class="m12-faq-answerBx">
+                            <p class="m12-faq__answer">Да, сервисный центр дает гарантию как на ремонт, так и на
+                                предоставляемые детали. Срок гарантии разнится: от 30-ти дней до 3-х лет, в зависимости
+                                от типа неисправности и устанавливаемой запчасти.</p>
+                            <!-- /.m12-faq__answer -->
+                        </div>
+                        <!-- /.m12-faq-answerBx -->
+                    </div>
+                    <!-- /.m12-faq__item -->
+                    <div class="m12-faq__item">
+                        <div class="m12-faq__item-titleBx">
+                            <p class="m12-faq__item-title">Вы выдаете какие-то документы, подтверждающие ремонт?</p>
+                            <!-- /.m12-faq__item-title -->
+                            <div class="m12-faq__item-arrow"><span></span></div>
+                            <!-- /.m12-faq__item-arrow -->
+                        </div>
+                        <!-- /.m12-faq__item-titleBx -->
+                        <div class="m12-faq-answerBx">
+                            <p class="m12-faq__answer">Да, сервисный центр дает гарантию как на ремонт, так и на
+                                предоставляемые детали. Срок гарантии разнится: от 30-ти дней до 3-х лет, в зависимости
+                                от типа неисправности и устанавливаемой запчасти.</p>
+                            <!-- /.m12-faq__answer -->
+                        </div>
+                        <!-- /.m12-faq-answerBx -->
+                    </div>
+                    <!-- /.m12-faq__item -->
+                    <div class="m12-faq__item">
+                        <div class="m12-faq__item-titleBx">
+                            <p class="m12-faq__item-title">Как узнать, когда моё устройство будет готово?</p>
+                            <!-- /.m12-faq__item-title -->
+                            <div class="m12-faq__item-arrow"><span></span></div>
+                            <!-- /.m12-faq__item-arrow -->
+                        </div>
+                        <!-- /.m12-faq__item-titleBx -->
+                        <div class="m12-faq-answerBx">
+                            <p class="m12-faq__answer">Да, сервисный центр дает гарантию как на ремонт, так и на
+                                предоставляемые детали. Срок гарантии разнится: от 30-ти дней до 3-х лет, в зависимости
+                                от типа неисправности и устанавливаемой запчасти.</p>
+                            <!-- /.m12-faq__answer -->
+                        </div>
+                        <!-- /.m12-faq-answerBx -->
+                    </div>
+                    <!-- /.m12-faq__item -->
+                    <div class="m12-faq__item">
+                        <div class="m12-faq__item-titleBx">
+                            <p class="m12-faq__item-title">Как к вам добраться?</p>
+                            <!-- /.m12-faq__item-title -->
+                            <div class="m12-faq__item-arrow"><span></span></div>
+                            <!-- /.m12-faq__item-arrow -->
+                        </div>
+                        <!-- /.m12-faq__item-titleBx -->
+                        <div class="m12-faq-answerBx">
+                            <p class="m12-faq__answer">Да, сервисный центр дает гарантию как на ремонт, так и на
+                                предоставляемые детали. Срок гарантии разнится: от 30-ти дней до 3-х лет, в зависимости
+                                от типа неисправности и устанавливаемой запчасти.</p>
+                            <!-- /.m12-faq__answer -->
+                        </div>
+                        <!-- /.m12-faq-answerBx -->
+                    </div>
+                    <!-- /.m12-faq__item -->
+                </div>
+                <!-- /.m12-faq-helper -->
+                <div class="m12-faq-helper">
+                    <div class="m12-faq__item">
+                        <div class="m12-faq__item-titleBx">
+                            <p class="m12-faq__item-title">Вы предоставляете гарантию на ремонт?</p>
+                            <!-- /.m12-faq__item-title -->
+                            <div class="m12-faq__item-arrow"><span></span></div>
+                            <!-- /.m12-faq__item-arrow -->
+                        </div>
+                        <!-- /.m12-faq__item-titleBx -->
+                        <div class="m12-faq-answerBx">
+                            <p class="m12-faq__answer">Да, сервисный центр дает гарантию как на ремонт, так и на
+                                предоставляемые детали. Срок гарантии разнится: от 30-ти дней до 3-х лет, в зависимости
+                                от типа неисправности и устанавливаемой запчасти.</p>
+                            <!-- /.m12-faq__answer -->
+                        </div>
+                        <!-- /.m12-faq-answerBx -->
+                    </div>
+                    <!-- /.m12-faq__item -->
+                    <div class="m12-faq__item">
+                        <div class="m12-faq__item-titleBx">
+                            <p class="m12-faq__item-title">Какие часы работы у сервисного центра?</p>
+                            <!-- /.m12-faq__item-title -->
+                            <div class="m12-faq__item-arrow"><span></span></div>
+                            <!-- /.m12-faq__item-arrow -->
+                        </div>
+                        <!-- /.m12-faq__item-titleBx -->
+                        <div class="m12-faq-answerBx">
+                            <p class="m12-faq__answer">Да, сервисный центр дает гарантию как на ремонт, так и на
+                                предоставляемые детали. Срок гарантии разнится: от 30-ти дней до 3-х лет, в зависимости
+                                от типа неисправности и устанавливаемой запчасти.</p>
+                            <!-- /.m12-faq__answer -->
+                        </div>
+                        <!-- /.m12-faq-answerBx -->
+                    </div>
+                    <!-- /.m12-faq__item -->
+                    <div class="m12-faq__item">
+                        <div class="m12-faq__item-titleBx">
+                            <p class="m12-faq__item-title">Какая у вас стоимость ремонта?</p>
+                            <!-- /.m12-faq__item-title -->
+                            <div class="m12-faq__item-arrow"><span></span></div>
+                            <!-- /.m12-faq__item-arrow -->
+                        </div>
+                        <!-- /.m12-faq__item-titleBx -->
+                        <div class="m12-faq-answerBx">
+                            <p class="m12-faq__answer">Да, сервисный центр дает гарантию как на ремонт, так и на
+                                предоставляемые детали. Срок гарантии разнится: от 30-ти дней до 3-х лет, в зависимости
+                                от типа неисправности и устанавливаемой запчасти.</p>
+                            <!-- /.m12-faq__answer -->
+                        </div>
+                        <!-- /.m12-faq-answerBx -->
+                    </div>
+                    <!-- /.m12-faq__item -->
+                </div>
+                <!-- /.m12-faq-helper -->
+            </div>
+            <!-- /.m12-faq-box -->
+        </div>
+        <!-- /.m12-faq__container -->
+    </section>
+    <!-- /.m12-faq -->
+</main>
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer-inner">
+      <div class="footer-box">
+        <div class="footer-logoBx">
+          <img src="./images/footer/logo.svg" alt="">
+        </div>
+        <!-- /.footer-logoBx -->
+        <div class="footer-docs">
+          <a href="" class="footer-docs__item">Политика конфиденциальности</a>
+          <a href="" class="footer-docs__item">Пользовательское соглашение</a>
+          <p class="footer-docs__item">© 2023. Все права защищены.</p>
+          <!-- /.footer__notice -->
+        </div>
+        <!-- /.footer-docs -->
+      </div>
+      <div class="footer-box">
+        <ul class="footer-pages">
+          <li class="footer-pages__item"><a href="" class="footer-pages__link">Ремонт</a></li>
+          <li class="footer-pages__item"><a href="" class="footer-pages__link">Диагностика</a></li>
+          <li class="footer-pages__item"><a href="" class="footer-pages__link">О нас</a></li>
+          <li class="footer-pages__item"><a href="" class="footer-pages__link">Цены</a></li>
+          <li class="footer-pages__item"><a href="" class="footer-pages__link">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <div class="footer-address">
+          <p class="footer-address__title">Адрес:</p>
+          <!-- /.footer-address__title -->
+          <p class="footer-address__content">Москва, улица Дыбенко, 7/1</p>
+          <!-- /.footer-address__content -->
+        </div>
+        <!-- /.footer-address -->
+        <div class="footer-address">
+          <p class="footer-address__title">Номер:</p>
+          <!-- /.footer-address__title -->
+          <a href="tel: +7 (939) 555-41-27" class="footer-address__content">+7 (939) 555-41-27</a>
+          <!-- /.footer-address__content -->
+        </div>
+        <!-- /.footer-address -->
+        <div class="footer-address">
+          <p class="footer-address__title">Время:</p>
+          <!-- /.footer-address__title -->
+          <p class="footer-address__content">Ежедневно с 09:00 до 21:00</p>
+          <!-- /.footer-address__content -->
+        </div>
+        <!-- /.footer-address -->
+      </div>
+    </div>
+    <!-- /.footer-inner -->
+  </div>
+</footer>
+<script src="./static/plugins/jquery.min.js"></script>
+<script src="./static/plugins/jquery.maskedinput.min.js"></script>
+<script src="./static/plugins/slick.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html> 
