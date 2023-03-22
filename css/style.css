@@ -278,9 +278,9 @@ html {
 * Например header__container, main__container и т.д.
 */
 [class*=__container] {
-  max-width: 73rem;
+  max-width: 72.25rem;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 0.625rem;
 }
 @media (max-width: 1024px) {
   [class*=__container] {
@@ -289,7 +289,7 @@ html {
 }
 @media (max-width: 480px) {
   [class*=__container] {
-    padding: 0 1rem;
+    padding: 0 0.625rem;
   }
 }
 
@@ -1143,6 +1143,12 @@ body {
     top: calc(50% - 93px);
   }
 }
+@media (max-width: 1366px) {
+  .m12-stages__steps.laptop {
+    width: 131%;
+    left: 60%;
+  }
+}
 @media (max-width: 1280px) {
   .m12-stages__steps {
     display: none;
@@ -1206,10 +1212,6 @@ body {
     left: 0;
     transform: none;
     top: 35%;
-  }
-  .m12-stages .slick-track {
-    margin-left: 20px;
-    position: relative;
   }
 }
 
@@ -1449,6 +1451,7 @@ body {
 @media (max-width: 480px) {
   .m12-faq {
     padding: 60px 0;
+    padding-top: 0;
   }
   .m12-faq-box {
     padding-top: 30px;
@@ -1844,6 +1847,9 @@ body {
 .slider-itemBx.slick-center .slider__title {
   color: #FFFFFF;
 }
+.slider-box {
+  min-height: 260px;
+}
 .slider__item {
   background: #FFFFFF;
   outline: 1px solid rgba(148, 148, 148, 0.15);
@@ -1958,6 +1964,9 @@ body {
     height: 229px !important;
     width: 229px !important;
   }
+  .slider-box {
+    min-height: 238px !important;
+  }
   .slider-itemBx.slick-center .slider__item {
     height: 238px !important;
     width: 238px !important;
@@ -1970,6 +1979,10 @@ body {
   .slider-arrowBx {
     width: 100%;
     padding: 0 8px;
+  }
+  .slider-arrowBx__arrow {
+    position: relative;
+    z-index: 13;
   }
 }
 @media (max-width: 380px) {
@@ -1994,6 +2007,14 @@ body {
 }
 .footer.mt-60 {
   margin-top: 60px;
+}
+.footer-logoBx.mobile {
+  display: none;
+}
+@media (max-width: 480px) {
+  .footer-logoBx.mobile {
+    display: block;
+  }
 }
 .footer-inner {
   display: flex;
@@ -2044,8 +2065,14 @@ body {
   .footer {
     padding: 46px 0;
   }
+  .footer__container {
+    padding-left: 26px;
+  }
+  .footer-logoBx {
+    display: none;
+  }
   .footer-inner {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .footer-docs {
     padding-top: 30px;
@@ -2054,6 +2081,6 @@ body {
     padding-top: 53px;
   }
   .footer-box:last-child {
-    padding-top: 53px;
+    padding-top: 30px;
   }
 }
