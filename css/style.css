@@ -532,6 +532,14 @@ body {
     margin-top: 10px;
   }
 }
+@media (max-width: 480px) {
+  .m12-header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: #FAFAFA;
+  }
+}
 
 .header-burger {
   position: relative;
@@ -722,6 +730,9 @@ body {
   }
 }
 @media (max-width: 480px) {
+  .m12-content {
+    padding-top: 70px;
+  }
   .m12-content__container {
     padding: 0;
   }
@@ -917,6 +928,7 @@ body {
 @media (max-width: 480px) {
   .template {
     padding-bottom: 0;
+    padding-top: 70px;
   }
   .template:after {
     height: 100%;
@@ -939,6 +951,9 @@ body {
     font-size: 1.25rem;
     margin-top: 15px;
     line-height: 1.5rem;
+  }
+  .template__title.ws-nowrap {
+    white-space: unset;
   }
   .template__subtitle {
     margin-top: 15px;
@@ -1461,7 +1476,7 @@ body {
   }
   .m12-faq__item-title {
     font-size: 1.125rem;
-    max-width: 265px;
+    max-width: 239px;
     line-height: 1.5rem;
   }
   .m12-faq__answer {
